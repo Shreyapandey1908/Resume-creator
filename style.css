@@ -1,0 +1,132 @@
+/* Basic styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f4c3, #80deea);
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+.form-section .input-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.form-section label {
+    width: 130px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.form-section label i {
+    margin-right: 10px;
+    color: #009688;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 130px);
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #009688;
+}
+
+/* Toast notification styling */
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.toast {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Resume Page Styling */
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.resume-content {
+    width: 60%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.resume-content h2 {
+    color: #00796b;
+}
+
+.resume-content p {
+    margin: 10px 0;
+}
+
+.resume-content .section-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #009688;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}

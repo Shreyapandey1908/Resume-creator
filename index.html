@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Resume Builder</h1>
+        
+        <div class="form-section">
+            <div class="input-group">
+                <label for="firstName"><i class="fa-solid fa-user"></i> First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter First Name">
+            </div>
+            <div class="input-group">
+                <label for="lastName"><i class="fa-solid fa-user"></i> Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name">
+            </div>
+            <div class="input-group">
+                <label for="contact"><i class="fa-solid fa-phone"></i> Contact Number:</label>
+                <input type="text" id="contact" name="contact" placeholder="Enter Contact Number">
+            </div>
+            <div class="input-group">
+                <label for="address"><i class="fa-solid fa-address-book"></i> Address:</label>
+                <textarea id="address" name="address" placeholder="Enter Address"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email">
+            </div>
+            <div class="input-group">
+                <label for="education"><i class="fa-solid fa-graduation-cap"></i> Education:</label>
+                <textarea id="education" name="education" placeholder="Enter Educational Details"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="skills"><i class="fa-solid fa-lightbulb"></i> Skills:</label>
+                <textarea id="skills" name="skills" placeholder="Enter Skills"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="hobbies"><i class="fa-solid fa-heart"></i> Hobbies:</label>
+                <textarea id="hobbies" name="hobbies" placeholder="Enter Hobbies"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="workExperience"><i class="fa-solid fa-briefcase"></i> Work Experience:</label>
+                <textarea id="workExperience" name="workExperience" placeholder="Enter workExperience"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="photo">Profile Photo:</label>
+                <input type="file" id="photo" accept="image/*" required>
+            </div>
+            
+            <button onclick="handleFormSubmit()" class="submit-btn">Generate Resume</button>
+        </div>
+    </div>
+    
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

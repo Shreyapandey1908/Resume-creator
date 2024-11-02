@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- <div class="resume-container"> -->
+        <div class="resume-content">
+            <div class="profile-section">
+                <div class="photo-section">
+                    <img id="photo" alt="photo" style="max-width: 200px; max-height: 200px ; border-radius: 50%;">
+                </div>
+                <div class="info-section">
+                    <h2 class="name-section">
+                        <i class="fa-solid fa-user"></i> 
+                        <span id="fullName"></span>
+                    </h2>
+                    <p><i class="fa-solid fa-envelope"></i> Email: <span id="email"></span></p>
+                    <p><i class="fa-solid fa-phone"></i> Phone: <span id="contact"></span></p>
+                    <p><i class="fa-solid fa-address-book"></i> Address: <span id="address"></span></p>
+                </div>
+            </div>
+
+            <div class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</div>
+            <p id="education"></p>
+
+            <div class="section-title"><i class="fa-solid fa-lightbulb"></i> Skills</div>
+            <p id="skills"></p>
+
+            <div class="section-title"><i class="fa-solid fa-heart"></i> Hobbies</div>
+            <p id="hobbies"></p>
+
+            <div class="section-title"><i class="fa-solid fa-briefcase"></i> Work Experience</div>
+            <p id="workExperience"></p>
+        </div>
+    <!-- </div> -->
+
+    <script>
+        document.getElementById("fullName").textContent = localStorage.getItem("firstName") + " " + localStorage.getItem("lastName");
+        document.getElementById("email").textContent = localStorage.getItem("email");
+        document.getElementById("contact").textContent = localStorage.getItem("contact");
+        document.getElementById("address").textContent = localStorage.getItem("address");
+        document.getElementById("education").textContent = localStorage.getItem("education");
+        document.getElementById("skills").textContent = localStorage.getItem("skills");
+        document.getElementById("hobbies").textContent = localStorage.getItem("hobbies");
+        document.getElementById("workExperience").textContent = localStorage.getItem("workExperience") || "N/A";
+        document.getElementById("photo").src = localStorage.getItem("photo")||  ;
+    </script>
+</body>
+</html>
